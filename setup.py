@@ -6,7 +6,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md'), 'r', encoding='u
     long_description = f.read()
 setup(
     name='emg_toolbox',
-    version='1.0.1',
+    version='1.0.2',
     author='Linus Zhang',
     author_email='products@wearlab.tech',
     description='EMG Toolbox is a Python toolkit for processing and analysing surface electromyography (sEMG) data. It includes a variety of feature extraction methods, signal filtering, and plotting functions, helping users efficiently preprocess and analyse EMG signals.',
