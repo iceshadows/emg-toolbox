@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy import signal
-from filters import PlifEegSubtractFilter
+from .filters import PlifEegSubtractFilter
 from scipy.fft import fft, fftfreq
 from scipy.signal import welch
 
