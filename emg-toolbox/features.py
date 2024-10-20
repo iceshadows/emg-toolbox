@@ -331,6 +331,21 @@ def extract_features(window_data, fs):
 
 
 def extract_all_features(data, fs, sliding=True, window_size=4000, step_size=100, overlap=False, return_dataframe=False):
+    """
+    从输入数据中提取特征，可选地使用滑动窗口方法。
+
+    Parameters:
+    data (np.ndarray): 输入的信号数据。
+    fs (int): 信号的采样频率。
+    sliding (bool): 如果为 True，则使用滑动窗口提取特征。默认值为 True。
+    window_size (int): 每个窗口的大小（以采样点数为单位）。默认值为 4000。
+    step_size (int): 滑动窗口的步长（以采样点数为单位，适用于 overlap 为 True 时）。默认值为 100。
+    overlap (bool): 如果为 True，窗口将以 step_size 重叠；如果为 False，窗口将不重叠。默认值为 False。
+    return_dataframe (bool): 如果为 True，返回包含特征的 pandas DataFrame。默认值为 False。
+
+    Returns:
+    Union[np.ndarray, pd.DataFrame]: 提取的特征，以 numpy 数组或 pandas DataFrame 格式返回。
+    """
     features = []
     window_points = []
     if sliding:
