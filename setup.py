@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='emg-toolbox',
+    name='emg_toolbox',
     version='0.1.0',
     author='Linus Zhang',
     author_email='products@wearlab.tech',
@@ -9,7 +9,7 @@ setup(
     long_description='A longer description of your library',
     long_description_content_type='text/markdown',
     url='https://github.com/your_username/your_repository',
-    packages=['emg-toolbox'],
+    packages=['emg_toolbox'],
     install_requires=[
         'pandas',
         'seaborn',
