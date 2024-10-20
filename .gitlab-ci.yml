@@ -1,0 +1,23 @@
+image: python:3.10
+
+stages:
+  - build
+
+before_script:
+  # 设置虚拟环境并安装所需的构建工具
+  - python -m venv venv
+  - source venv/bin/activate
+  - pip install --upgrade pip setuptools wheel
+
+build:
+  stage: build
+  script:
+    # 构建源代码分发包 (sdist)
+    - python setup.py sdist
+    # 构建二进制分发包 (bdist_wheel)
+    - python setup.py bdist_wheel
+  artifacts:
+    paths:
+      - dist/*.tar.gz
+      - dist/*.whl
+    expire_in: 1 week
