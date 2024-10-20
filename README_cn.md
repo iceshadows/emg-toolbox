@@ -4,6 +4,7 @@
 
 EMG Toolbox 是一个用于处理和分析表面肌电图 (sEMG) 数据的 Python 工具包。它包含了多种特征提取方法、信号过滤和绘图功能，帮助用户高效地对 EMG 信号进行预处理和特征分析。
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13957415.svg)](https://doi.org/10.5281/zenodo.13957415)
 ## 功能
 
 - 多种 EMG 特征提取方法：均方根 (RMS)、平均绝对值 (MAV)、过零点数 (ZC)、波形长度 (WL)、斜率符号变化 (SSC) 等。

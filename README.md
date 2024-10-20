@@ -4,6 +4,7 @@
 
 EMG Toolbox is a Python toolkit for processing and analysing surface electromyography (sEMG) data. It includes a variety of feature extraction methods, signal filtering, and plotting functions, helping users efficiently preprocess and analyse EMG signals.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13957415.svg)](https://doi.org/10.5281/zenodo.13957415)
 ## Features
 
 - Various EMG feature extraction methods: Root Mean Square (RMS), Mean Absolute Value (MAV), Zero Crossing (ZC), Waveform Length (WL), Slope Sign Change (SSC), etc.
